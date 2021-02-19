@@ -115,17 +115,17 @@
 # new_dict["my_key"] = "Something Else" # Changes the value of the key in the square brackets
 # print(new_dict)
 
-num = 11
-# This clause is followed if the statement is True
-if num == 10:
-    print("The number is 10")
-# This is followed if the original if statement is False
-else:
-    print("The number is not 10")
-
-if num == 10:
-    print("The number is 10")
-elif num > 10:
-    print("The number is greater than 10")
-else:
-    print("The number is not 10")
+# num = 11
+# # This clause is followed if the statement is True
+# if num == 10:
+#     print("The number is 10")
+# # This is followed if the original if statement is False
+# else:
+#     print("The number is not 10")
+#
+# if num == 10:
+#     print("The number is 10")
+# elif num > 10:
+#     print("The number is greater than 10")
+# else:
+#     print("The number is not 10")
