@@ -24,6 +24,7 @@ def hangman():
 
     # As long as you have 1 or more lives, you can play
     while lives > 0:
+        # Hides the original word with '___' as word2, which is printed throughout the game
         for x in word:
             if x in correct_letters:
                 pass
