@@ -7,19 +7,23 @@ def speedup(cspeed):
         print(f"You've travelled  {Distance(cspeed, fspeed, acc, timec, timet)} (m) ")
     return fspeed
 
+
 def brake(cspeed):
     fspeed = int(input('What speed do you want to get to?(mps) '))
     if fspeed < cspeed:
         print(f"You're travelling at  {fspeed} (m) ")
     return fspeed
 
+
 def Distance(cspeed, fspeed, acceleration, timec, timet):
     d1 = fspeed*timet
     d2 = timec*cspeed+(0.5*acceleration*(timec)**2)
     return d1+d2
 
+
 def acceleration(currentspeed,finalspeed,time):
-    return (finalspeed-currentspeed)/(time)
+    return (finalspeed-currentspeed)/time
+
 
 def main():
     print('You are currently stationary.')
@@ -28,9 +32,9 @@ def main():
     while t:
         cam = input('Do you want to speed up, brake, reverse or exit game.(A/B/R/E) ').lower()
         if cam == 'a':
-            cspeed=speedup(cspeed)
+            cspeed = speedup(cspeed)
         elif cam == 'b':
-            cspeed=brake(cspeed)
+            cspeed = brake(cspeed)
         elif cam == 'r':
             if cspeed == 0:
                 fspeed = int(input('How fast do you want to reverse?(mps) '))
@@ -43,4 +47,6 @@ def main():
         else:
              print('Invalid command try again ')
     return
+
+
 main()
